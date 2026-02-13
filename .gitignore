@@ -1,0 +1,28 @@
+# --- Mac System Files ---
+.DS_Store
+
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- Data (The most important part) ---
+# We ignore the actual data files to keep the GitHub repo light
+# But we keep the folders themselves
+data/raw/*
+data/processed/*
+
+# Exception: allow the .gitkeep files if you created them
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Model Outputs ---
+outputs/*.pkl
+outputs/*.csv
